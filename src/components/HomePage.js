@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../sass/main.scss'
+// import '../sass/main.scss'
 
 class HomePage extends Component {
   render(){
@@ -39,7 +39,7 @@ class HomePage extends Component {
           <section class="section-tours" id="section-tours">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
-          Most popular tours
+          Latest Apartments
         </h2>
       </div>
 
@@ -51,15 +51,15 @@ class HomePage extends Component {
                 &nbsp;
               </div>
               <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
+                <span class="card__heading-span card__heading-span--1">434 East 84th Street</span>
               </h4>
               <div class="card__details">
                 <ul>
-                  <li>3 day tours</li>
-                  <li>Up to 30 people</li>
-                  <li>2 tour guides</li>
-                  <li>Sleep in cozy hotels</li>
-                  <li>Difficulty: easy</li>
+                  <li>1 Bedroom</li>
+                  <li>1 Bathroom</li>
+                  <li>Transit</li>
+                  <li>Culture</li>
+                  <li>Shopping</li>
                 </ul>
               </div>
             </div>
@@ -67,7 +67,7 @@ class HomePage extends Component {
               <div class="card__cta">
                 <div class="card__price-box">
                   <p class="card__price-only">Only</p>
-                  <p class="card__price-value">$297</p>
+                  <p class="card__price-value">$2,200</p>
                 </div>
                 <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
@@ -83,15 +83,15 @@ class HomePage extends Component {
                 &nbsp;
               </div>
               <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--2">The Forest Hiker</span>
+                <span class="card__heading-span card__heading-span--2">Grove Street</span>
               </h4>
               <div class="card__details">
                 <ul>
-                  <li>7 day tours</li>
-                  <li>Up to 40 people</li>
-                  <li>6 tour guides</li>
-                  <li>Sleep in provided tents</li>
-                  <li>Difficulty: medium</li>
+                    <li>1 Bedroom</li>
+                    <li>1 Bathroom</li>
+                    <li>Transit</li>
+                    <li>Culture</li>
+                    <li>Shopping</li>
                 </ul>
               </div>
 
@@ -99,8 +99,8 @@ class HomePage extends Component {
             <div class="card__side card__side--back card__side--back-2">
               <div class="card__cta">
                 <div class="card__price-box">
-                  <p class="card__price-only">Only</p>
-                  <p class="card__price-value">$497</p>
+                  <p class="card__price-only">Price</p>
+                  <p class="card__price-value">$2,200</p>
                 </div>
                 <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
@@ -116,15 +116,15 @@ class HomePage extends Component {
                 &nbsp;
               </div>
               <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--3">The Snow Adventurer</span>
+                <span class="card__heading-span card__heading-span--3">Jersey City, NJ</span>
               </h4>
               <div class="card__details">
                 <ul>
-                  <li>5 day tours</li>
-                  <li>Up to 15 people</li>
-                  <li>3 tour guides</li>
-                  <li>Sleep in provided tents</li>
-                  <li>Difficulty: hard</li>
+                  <li>1 Bedroom</li>
+                  <li>1 Bathroom</li>
+                  <li>Transit</li>
+                  <li>Culture</li>
+                  <li>Shopping</li>
                 </ul>
               </div>
 
@@ -143,9 +143,56 @@ class HomePage extends Component {
       </div>
 
       <div class="u-center-text u-margin-top-huge">
-        <a href="#" class="btn btn--green">Discover all tours</a>
+        <a href="#" class="btn btn--green">Availabilities</a>
       </div>
     </section>
+    <section class="section-book">
+  <div class="row">
+    <div class="book">
+      <div class="book__form">
+        <form action="#" class="form">
+          <div class="u-margin-bottom-medium">
+            <h2 class="heading-secondary">
+              Start booking now
+            </h2>
+          </div>
+
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Full name" id="name" required/>
+            <label for="name" class="form__label">Full name</label>
+          </div>
+
+          <div class="form__group">
+            <input type="email" class="form__input" placeholder="Email address" id="email" required/>
+            <label for="email" class="form__label">Email address</label>
+          </div>
+
+          <div class="form__group u-margin-bottom-medium">
+            <div class="form__radio-group">
+              <input type="radio" class="form__radio-input" id="small" name="size"/>
+              <label for="small" class="form__radio-label">
+                <span class="form__radio-button"></span>
+                Small tour group
+              </label>
+            </div>
+
+            <div class="form__radio-group">
+              <input type="radio" class="form__radio-input" id="large" name="size"/>
+              <label for="large" class="form__radio-label">
+                <span class="form__radio-button"></span>
+                Large tour group
+              </label>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <button class="btn btn--green">Next step &rarr;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
       </div>
     )
   }
